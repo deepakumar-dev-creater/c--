@@ -1,0 +1,41 @@
+Syntax
+
+[capture](parameters) -> return_type {
+    // function body
+}
+
+
+Capture Clause:
+
+[ ]: An empty capture clause indicates that the lambda function does not capture any external variables.
+[var]: Captures a specific variable by value.
+[&var]: Captures a specific variable by reference.
+[=]: Captures all external variables by value.
+[&]: Captures all external variables by reference.
+
+Definition:
+
+A lambda function is an anonymous function defined using a concise syntax introduced in C++11.
+
+Advantages:
+
+Highlight the advantages of lambda functions, such as brevity, improved readability, and the ability to create functions on the fly.
+
+Compatibility:
+
+Mention that lambda functions are part of the C++11 standard and later versions.
+
+
+
+important points
+
+
+Mutable Lambdas:
+
+If you capture variables by value, they are treated as constants within the lambda. The mutable keyword allows you to modify them
+int x = 5;
+auto increment = [x]() mutable {
+    x++;
+    std::cout << x << "\n";
+};
+increment(); // Outputs 6
