@@ -1,0 +1,14 @@
+Run-Time Type Identification (RTTI)
+
+Run-Time Type Identification (RTTI) is a feature in C++ that allows you to obtain the type information of an object during program execution. This can be useful when using dynamic typing, where the type of an object can change at runtime
+
+There are two main mechanisms for RTTI in C++:
+
+typeid operator
+dynamic_cast operator
+
+
+
+Use Cases:
+
+Explain situations where RTTI might be beneficial, such as when working with polymorphic classes and the need to identify the actual type of an object.
